@@ -194,6 +194,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "bytes",
+ "resp-protocol",
  "thiserror",
  "tokio",
 ]
@@ -205,6 +206,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c82cf8cff14456045f55ec4241383baeff27af886adb72ffb2162f99911de0fd"
 dependencies = [
  "bitflags",
+]
+
+[[package]]
+name = "resp-protocol"
+version = "0.0.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8905ff27d846da74e740d321c56f782ffeaf4f95792702df98aab8b37d3bc29f"
+dependencies = [
+ "bytes",
 ]
 
 [[package]]
