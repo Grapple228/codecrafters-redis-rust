@@ -4,10 +4,8 @@ use redis_starter_rust::ThreadPool;
 use resp_protocol::SimpleString;
 
 fn handle_client(mut stream: TcpStream){
-    // READ REQUEST    
-    let mut buffer: String = String::new();
-    let request = stream.read_to_string(&mut buffer);
-
+    // READ REQUEST
+    
     let response = "PONG";
 
     let simple: SimpleString = SimpleString::new(response.as_bytes());
